@@ -113,7 +113,6 @@ body {
 
 .background-img-container {
     position: relative;
-    text-align: center;
 }
 
 .form-logo-text-container,
@@ -134,7 +133,7 @@ body {
     align-items: center;
     background-color: rgb(0 0 0 / 50%);
     color: rgb(255 255 255);
-    bottom: 450px;
+    bottom: 60%;
     width: 100%;
     padding: 16px;
 }
@@ -144,6 +143,7 @@ body {
     bottom: 0px;
     width: 100%;
     padding: 8px;
+    text-align: center;
 }
 
 .image-credits a {
