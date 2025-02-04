@@ -72,6 +72,16 @@ h6 {
 
 /* Styles */
 
+:root {
+    --color-white: #ffffff;
+    --color-dark-green: #596D48;
+
+    --border-input-invalid: 1px solid rgb(255, 0, 0);
+    --outline-input-focus: 1px solid rgb(0, 117, 251);
+
+    --subtle-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 @font-face {
     font-family: 'norsebold';
     src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
@@ -102,7 +112,6 @@ body {
 .sidebar {
     flex-grow: 0;
     flex-basis: 70%;
-    color: white;
 }
 
 .sidebar img.background-img {
@@ -132,7 +141,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(0 0 0 / 50%);
-    color: rgb(255 255 255);
+    color: var(--color-white);
     bottom: 60vh;
     width: 100%;
     padding: 16px;
@@ -141,6 +150,7 @@ body {
 .image-credits {
     font-size: 0.75rem;
     bottom: 0px;
+    color: var(--color-white);
     width: 100%;
     padding: 8px;
     text-align: center;
@@ -178,10 +188,10 @@ div.form-column {
 
 /* Form styles */
 .form-column form {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-white);
     padding: 16px;
     padding-left: 48px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: var(--subtle-box-shadow);
     margin-bottom: 32px;
 }
 
@@ -212,12 +222,12 @@ div.form-column {
 }
 
 .form-control input:focus {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-    outline: 1px solid rgb(0, 117, 251);
+    box-shadow: var(--subtle-box-shadow);
+    outline: var(--outline-input-focus);
 }
 
 .form-control input:invalid {
-    border: 1px solid rgb(255, 0, 0);
+    border: var(--border-input-invalid);
 }
 
 /* Form bottom row styles */
@@ -231,8 +241,8 @@ div.form-column {
     appearance: none;
     border: none;
     border-radius: 10px;
-    background-color: #596D48;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--color-dark-green);
+    box-shadow: var(--subtle-box-shadow);
     cursor: pointer;
     padding: 8px 48px;
     margin-bottom: 24px;
@@ -240,6 +250,6 @@ div.form-column {
 
 .form-bottom a {
     text-decoration: none;
-    color: #596D48;
+    color: var(--color-dark-green);
     font-weight: 900;
 }
