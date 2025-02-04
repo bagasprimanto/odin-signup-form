@@ -85,8 +85,8 @@ h6 {
 }
 
 body {
-    height: 100vh;
     display: flex;
+    height: 100vh;
 }
 
 .form-logo-text {
@@ -96,7 +96,8 @@ body {
 
 /* Sidebar styles */
 .sidebar {
-    width: 60%;
+    flex-grow: 0;
+    flex-basis: 60%;
     color: white;
 }
 
