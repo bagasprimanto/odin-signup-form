@@ -171,6 +171,7 @@ div.form-column {
 
 .form-column {
     color: rgb(61, 61, 61);
+    height: 100vh;
 }
 
 .form-column .form-subtitles {
